@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Peaks</title>
+    <link rel="stylesheet" href="ProjectStyle.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Adventure Peaks</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Explore The Untouched Mountains</h1>
+        <p>Discover breathtaking landscapes and thrilling adventures.</p>
+        <button onclick="showMessage()">Start Journey</button>
+    </section>
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <div class="cards">
+            <div class="card" onclick="showPlace('Himalayas')">
+                <h3>Himalayas</h3>
+                <p>Snow-covered peaks and amazing trekking routes.</p>
+            </div>
+
+            <div class="card" onclick="showPlace('Spiti Valley')">
+                <h3>Spiti Valley</h3>
+                <p>A paradise for adventure lovers.</p>
+            </div>
+
+            <div class="card" onclick="showPlace('Manali')">
+                <h3>Manali</h3>
+                <p>Beautiful mountains and exciting activities.</p>
+            </div>
+
+            <div class="card" onclick="showPlace('Valley of Flowers')">
+                <h3>Valley of Flowers</h3>
+                <p>Colorful landscapes and scenic beauty.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Adventure Activities</h2>
+
+        <div class="cards">
+            <div class="card" onclick="showPlace('Trekking')">🥾 Trekking</div>
+            <div class="card" onclick="showPlace('Camping')">🏕 Camping</div>
+            <div class="card" onclick="showPlace('Rock Climbing')">🧗 Rock Climbing</div>
+            <div class="card" onclick="showPlace('River Rafting')">🚣 River Rafting</div>
+        </div>
+    </section>
+
+    <div id="info-box">
+        Click any destination or activity to know more.
+    </div>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Adventure Peaks | Explore Nature</p>
+    </footer>
+
+    <script src="ProjectScript.js"></script>
+
+</body>
+</html>
